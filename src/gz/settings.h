@@ -40,6 +40,7 @@ enum cheats
   CHEAT_USEITEMS,
   CHEAT_NOMAP,
   CHEAT_MAX,
+  CHEAT_BOSS,
 };
 
 enum commands

@@ -806,6 +806,7 @@ typedef struct
 #define z64_seq_buf_addr                        0x80124800
 #define z64_ctxt_addr                           0x801C84A0
 #define z64_link_addr                           0x801DAA30
+#define z64_bossFlags_addr                      0x8011A880
 
 /* rom addresses */
 #define z64_icon_item_static_vaddr              0x007BD000
@@ -854,6 +855,7 @@ typedef struct
 #define z64_seq_buf_addr                        0x801249C0
 #define z64_ctxt_addr                           0x801C8660
 #define z64_link_addr                           0x801DABF0
+#define z64_bossFlags_addr                      0x8011A880 /* wrong */
 
 /* rom addresses */
 #define z64_icon_item_static_vaddr              0x007BD000
@@ -902,6 +904,8 @@ typedef struct
 #define z64_seq_buf_addr                        0x801250D0
 #define z64_ctxt_addr                           0x801C8D60
 #define z64_link_addr                           0x801DB2F0
+#define z64_bossFlags_addr                      0x8011A880 /* wrong */
+
 
 /* rom addresses */
 #define z64_icon_item_static_vaddr              0x007BD000

@@ -371,6 +371,7 @@ static const char *cheat_names[] =
   "no music",
   "items usable",
   "no minimap",
+  "destroy bossroom flags",
 };
 
 void command_break(void)
@@ -1560,6 +1561,8 @@ void main_hook()
     memset(&z64_game.restriction_flags, 0, sizeof(z64_game.restriction_flags));
   if (settings->cheats & (1 << CHEAT_NOMAP))
     z64_gameinfo.minimap_disabled = 1;
+  if (settings->cheats & (1 << CHEAT_BOSS))
+    memset(0x8011A880, 0, 14)); /* uh duz this need a & b4 address idk c fuck dis shit */
 
   for (int i = 0; i < COMMAND_MAX; ++i) {
     _Bool active = 0;
